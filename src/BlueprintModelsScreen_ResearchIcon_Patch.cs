@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 namespace ResearchAvailable
 {
-    [HarmonyPatch(typeof(BlueprintModelsScreen), nameof(BlueprintModelsScreen.Show))]
+    [HarmonyPatch(typeof(BlueprintModelsScreen), "UpdateResearchIcon")]    
     public static class BlueprintModelsScreen_ResearchIcon_Patch
     {
         /// <summary>
@@ -86,6 +86,11 @@ namespace ResearchAvailable
                 tex = new Texture2D(2, 2);
                 tex.LoadImage(fileData); //..this will auto-resize the texture dimensions.
             }
+            else
+            {
+                throw new FileNotFoundException($"Unable to find {filePath}");
+            }
+
             return tex;
         }
     }
