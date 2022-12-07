@@ -46,3 +46,9 @@ Safe to add and remove from existing saves.
 # Acknowledgements
 
 [Beaker icon created by Dave Gandy - Flaticon](https://www.flaticon.com/free-icons/beaker)
+
+
+# Change Log
+## 1.1.0
+* Fixed hard lock on background research.  Issue: If a research completed but the player has not opened the blueprint window for the first time, the game would hard lock.
+A similar issue occurred when the user reloaded a game without exiting.
