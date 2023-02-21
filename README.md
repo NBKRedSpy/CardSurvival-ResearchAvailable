@@ -2,6 +2,11 @@
 # Research Available
 Adds a beaker icon to any research tab which has blueprints that can be researched.  Excludes the blueprint currently being researched.
 # Installation 
+This section describes how to manually install the mod.
+
+If using the Vortex mod manager from NexusMods, these steps are not needed.  
+
+## Overview
 This mod requires the BepInEx mod loader.
 
 ## BepInEx Setup
